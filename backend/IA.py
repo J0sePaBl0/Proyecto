@@ -1,8 +1,7 @@
 import gradio as gr
 import openai
-import os
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def openai_process_message(user_message):
     
