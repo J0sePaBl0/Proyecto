@@ -13,10 +13,8 @@ def openai_process_message(user_message):
     ]
     messages.append({"role": "user", "content": user_message})
 
-    
     openai_response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, max_tokens=100)
 
-   
     response_text = openai_response.choices[0].message.content
     messages.append({"role": "assistant", "content": response_text})
     
