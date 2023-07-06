@@ -17,7 +17,7 @@ def openai_process_message(user_message):
 
     response_text = openai_response.choices[0].message.content
     messages.append({"role": "assistant", "content": response_text})
-    
+
     return response_text
 examples = [
     "Que es un chatbot?",
