@@ -34,10 +34,7 @@
   }
   
   /* Estilos para enlaces */
-  a {
-    color: #007bff !important;
-    text-decoration: none;
-  }
+  
   
   a:hover {
     text-decoration: underline;
@@ -60,11 +57,41 @@
 
   .container{
     margin-left: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .navbar {
     background-color: transparent;
+   
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar .nav-link {
-    color: black;
+    position: relative;
+    margin: 5px;
+    margin-right: 40px;
+    color: #007bff !important;
+    text-decoration: none;
+  }
+  .collapse {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn{
+    background-color: #007bff;
+  }
+
+  .formD{
+    
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 10px;       
   }

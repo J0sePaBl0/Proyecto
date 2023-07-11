@@ -24,5 +24,4 @@ container.create_item(new_document)
 
 # Otros operaciones con la base de datos...
 
-# Cerrar la conexión
-client.close()
+
