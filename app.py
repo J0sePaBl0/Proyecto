@@ -11,7 +11,9 @@ def index():
 def hola():
    return "Hello, World!"
   
-
+@app.route("/form")
+def formulario():
+   return render_template('login.html')
 
 if __name__ == '__main__':
    app.run()
