@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Registro e Inicio de Sesion</title>
-   <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}">
-  </head>
-  <body>
-    <section class="wrapper">
-      <div class="form signup">
-        <header>Registrarse</header>
-        <form action="#">
-          <input type="text" placeholder="Nombre Completo" required id="rNombre"/>
-          <input type="text" placeholder="Correo Electrónico" required id="rCorreo"/>
-          <input type="password" placeholder="Contraseña" required id="rContra"/>
-          <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">Acepto todos los términos y condiciones</label>
-          </div>
-          <input type="submit" value="Registrar" id="rButton"/>
-        </form>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro e Inicio de Sesión</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+  <section class="wrapper">
+    <div class="form signup">
+      <header>Registrarse</header>
+      <form id="signupForm">
+        <input type="text" placeholder="Nombre Completo" id="rNombre" />
+        <input type="text" placeholder="Correo Electrónico"  id="rCorreo" />
+        <input type="password" placeholder="Contraseña" id="rContra" />
+        <div class="checkbox">
+          <input type="checkbox" id="signupCheck" />
+          <label for="signupCheck">Acepto todos los términos y condiciones</label>
+        </div>
+        <input type="submit" value="Registrar" id="rButton" />
+      </form>
+    </div>
 
-      <div class="form login">
-        <header>Iniciar Sesión</header>
-        <form action="#">
-          <input type="text" placeholder="Correo Electrónico" required id="lCorreo"/>
-          <input type="password" placeholder="Contraseña" required id="lContra"/>
-          <a href="#">¿Olvidaste tu contraseña?</a>
-          <input type="submit" value="Iniciar Sesión" id="lButton"/>
-        </form>
-      </div>
+    <div class="form login">
+      <header>Iniciar Sesión</header>
+      <form id="loginForm">
+        <input type="text" placeholder="Correo Electrónico" required id="lCorreo" />
+        <input type="password" placeholder="Contraseña" required id="lContra" />
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <input type="submit" value="Iniciar Sesión" id="lButton" />
+      </form>
+    </div>
 
-      <script src="./login.js"></script>
-      <script src="./registro.js"></script>
-    </section>
-  </body>
+    <script src="{{ url_for('static', filename='registro.js') }}"></script>
+  </section>
+</body>
 </html>
