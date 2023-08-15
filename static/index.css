@@ -82,8 +82,10 @@
     position: relative;
     margin: 5px;
     margin-right: 40px;
+    margin-left: 40px;
     color: #007bff !important;
     text-decoration: none;
+    font-size: 20px;
   }
   .collapse {
     
@@ -92,7 +94,8 @@
     justify-content: center;
   }
   .btn{
-    background-color: #007bff;
+    border-radius: 10px;
+    background-color: #52BFEE ;
   }
 
   .formD{
@@ -101,7 +104,7 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-left: 10px;       
+    margin-left: 1px;       
   }
 
   img{
