@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .comienzaBtn{
+    background-color:#52BFEE ;
+    color: white;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+  }
   /* Estilos generales */
   body {
     font-family: Arial, sans-serif;
@@ -14,6 +21,7 @@
   }
   
   .container {
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -65,7 +73,7 @@
   }
   .navbar {
     background-color: transparent;
-   
+    position: absolute;
     display: flex;
     flex-direction: column;
   }
@@ -94,4 +102,25 @@
     flex-direction: row;
     justify-content: end;
     margin-left: 10px;       
+  }
+
+  img{
+    position: relative;
+    z-index: 1;
+  }
+  .Texto{
+    position: relative;
+    left: 500px;
+    z-index: 2;
+  }
+  .Texto h1{
+    font-size: 70px;
+    color: #0089B5;
+  }
+  .Texto p{
+    color: #706F6F;
+    font-size: 17px;
+  }
+  .Texto h2{
+    color: #706F6F;
   }

@@ -20,7 +20,7 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tienda</a>
+            <a class="nav-link" href="http://127.0.0.1:5000/tienda">Tienda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mis bots</a>
@@ -28,19 +28,28 @@
         </ul>
         <div class="formD">
           <form class="form-inline">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Iniciar sesión</button>
+            <button class="btn btn-outline-light my-2 my-sm-0" href="http://127.0.0.1:5000/form" type="submit">Iniciar sesión</button>
             <a href="http://127.0.0.1:5000/form" class="btn btn-outline-light my-2 my-sm-0 ml-2">Registro</a>
           </form>
         </div>
       </div>
     </div>
   </nav>
+  
     
     <div class="container">
+      <div class="Texto">
+        <h2>Tu camino al futuro</h2>
+        <h1>BOTLAND</h1>
+        <p>Vive la experiencia con nosotros. Interactúa
+          con gran variedad de bots en todo momento</p>
+        <button class="comienzaBtn">comienza tu aventura</button>
+      </div>
       <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='img/FondoInicio.png') }}"  width="1402,15" height="864,93"/>
+      
     </div>
 
     
-
+    
 </body>
 </html>

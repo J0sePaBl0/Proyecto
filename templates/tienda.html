@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda</title>
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='bootstrap.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tienda.css') }}">
+  
+</head>
+<body>
+<section class="sct-superior">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/tienda">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mis bots</a>
+          </li>
+        </ul>
+        <div class="formD">
+          <form class="form-inline">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Iniciar sesión</button>
+            <a href="http://127.0.0.1:5000/form" class="btn btn-outline-light my-2 my-sm-0 ml-2">Registro</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+</section>
+    <div class="bot-list" id="botList">
+        <!-- Aquí se cargarán los datos de los bots con JavaScript -->
+    </div>
+ 
+    <script src="{{ url_for('static', filename='cargar_bots.js') }}"></script>
+  </section>
+</body>
+</html>
