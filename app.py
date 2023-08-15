@@ -11,11 +11,13 @@ def index():
 # Ruta para el registro de usuarios
 @app.route("/registro", methods=['POST'])
 def registro():
-    nombre = request.form.get('nombre')
-    correo = request.form.get('correo')
-    contraseña = request.form.get('contraseña')
+    
+    datos = request.json
+    nombre = datos['nombre']
+    correo = datos['correo']
+    contraseña = datos['contraseña']
 
-    # Generar un ID manualmente
+    # Generar un ID manualmente utilizando uuid
     usuario_id = str(uuid.uuid4())
 
     # Llamar a la función para registrar el usuario en la base de datos
