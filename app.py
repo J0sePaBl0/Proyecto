@@ -25,6 +25,25 @@ def registro():
 
     return jsonify({'message': resultado})
 
+@app.route("/registroBots", methods=['POST'])
+def registroBots():
+    
+    datos = request.json
+    nombre = datos['nombre']
+    descripcion = datos['descripcion']
+    precio = datos['precio']
+
+    # Generar un ID manualmente utilizando uuid
+    usuario_id = str(uuid.uuid4())
+
+    # Llamar a la función para registrar el usuario en la base de datos
+    resultado = crear_bot(usuario_id, nombre, descripcion, precio)
+
+    return jsonify({'message': resultado})
+
+
+
+
 @app.route("/obtener_bots")
 def obtenerBots():
     bots = obtener_bots()  # Obtener los datos de los bots desde ConexionDB.py
@@ -45,6 +64,11 @@ def formulario():
 def tienda():
    
    return render_template('tienda.html')
+
+@app.route("/crearBot")
+def createBot():
+   
+   return render_template('crearBot.html')
 
 @app.route("/crear_bots")
 def crear_bots_route():

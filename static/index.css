@@ -7,10 +7,19 @@
     background-color:#52BFEE ;
     color: white;
     padding: 8px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     border: none;
+    border: 2px solid transparent; /* Establece el borde inicialmente transparente */
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
   }
+  
+  
+  .comienzaBtn:hover {
+    border: solid black 4px;
+  }
+  
+  
   /* Estilos generales */
   body {
     font-family: Arial, sans-serif;
@@ -30,7 +39,7 @@
   /* Estilos para encabezados */
   h1 {
     color: #0056b3;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -58,6 +67,7 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
+  
   
   .button:hover {
     background-color: #0056b3;
@@ -113,17 +123,18 @@
   }
   .Texto{
     position: relative;
-    left: 500px;
+    left: 600px;
     z-index: 2;
   }
   .Texto h1{
-    font-size: 70px;
+    font-size: 90px;
     color: #0089B5;
   }
   .Texto p{
     color: #706F6F;
-    font-size: 17px;
+    font-size: 20px;
   }
   .Texto h2{
     color: #706F6F;
+    font-size: 30px;
   }

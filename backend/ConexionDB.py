@@ -45,14 +45,13 @@ def registrar_usuario(usuario_id,nombre, correo, contraseña):
     
     return 'Registro exitoso'
 
-def crear_bot():
+def crear_bot(bot_id,nombre,descripcion,precio):
   
-   
     nuevo_bot = {
-        'id': '4',
-        'nombre': 'Bot nutricionista',
-        'descripcion': 'Este bot te ayudara a realizar tu dieta dependiendo de lo que necesites',
-        'precio': '60'
+        'id': bot_id,
+        'nombre': nombre,
+        'descripcion': descripcion,
+        'precio': precio
     }
     
     bots_container.create_item(nuevo_bot)
